@@ -13,7 +13,7 @@ class ProvideViewModel{
     static let provide = ProvideViewModel()
     private init() {}
 
-    // MARK: - LOGIN VIEW MODEL RESPOSITORY INJECTION
+    // MARK: - Watch VIEW MODEL RESPOSITORY INJECTION
     func watchViewModel() -> WatchViewModel{
         return WatchViewModel(repository: LiveDataRepository.shared)
     }
