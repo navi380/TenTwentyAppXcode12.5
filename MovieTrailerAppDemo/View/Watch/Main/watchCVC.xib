@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="watchCVC" id="gTV-IL-0wX" customClass="watchCVC" customModule="MovieTrailerApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="417" height="266"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="417" height="266"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cwW-Sl-V0W">
+                        <rect key="frame" x="0.0" y="0.0" width="417" height="240"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="movieImage" translatesAutoresizingMaskIntoConstraints="NO" id="kTu-dq-dcO">
+                                <rect key="frame" x="0.0" y="0.0" width="417" height="240"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="roundRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="jojo Rabit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GIU-xc-vgn">
+                                <rect key="frame" x="20" y="199" width="377" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstItem="kTu-dq-dcO" firstAttribute="top" secondItem="cwW-Sl-V0W" secondAttribute="top" id="Fdg-iD-7Ha"/>
+                            <constraint firstAttribute="height" constant="240" id="TId-va-MwG"/>
+                            <constraint firstAttribute="bottom" secondItem="GIU-xc-vgn" secondAttribute="bottom" constant="20" id="ZLw-M4-4ke"/>
+                            <constraint firstAttribute="trailing" secondItem="kTu-dq-dcO" secondAttribute="trailing" id="ZM3-nW-dwO"/>
+                            <constraint firstItem="GIU-xc-vgn" firstAttribute="leading" secondItem="cwW-Sl-V0W" secondAttribute="leading" constant="20" id="c9X-Ob-cQb"/>
+                            <constraint firstAttribute="trailing" secondItem="GIU-xc-vgn" secondAttribute="trailing" constant="20" id="gKD-E3-yyL"/>
+                            <constraint firstItem="kTu-dq-dcO" firstAttribute="leading" secondItem="cwW-Sl-V0W" secondAttribute="leading" id="gTG-lT-Crm"/>
+                            <constraint firstAttribute="bottom" secondItem="kTu-dq-dcO" secondAttribute="bottom" id="rxR-mQ-Lny"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="roundRadius">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="cwW-Sl-V0W" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="F5i-sr-wLX"/>
+                <constraint firstItem="cwW-Sl-V0W" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="MPE-DH-ca0"/>
+                <constraint firstAttribute="bottom" secondItem="cwW-Sl-V0W" secondAttribute="bottom" id="coY-Ts-zSh"/>
+                <constraint firstAttribute="trailing" secondItem="cwW-Sl-V0W" secondAttribute="trailing" id="tGj-qT-RgO"/>
+            </constraints>
+            <size key="customSize" width="417" height="266"/>
+            <connections>
+                <outlet property="movieImageView" destination="kTu-dq-dcO" id="D75-9s-lkk"/>
+                <outlet property="movieTitleLabel" destination="GIU-xc-vgn" id="Zd5-Mn-pqQ"/>
+            </connections>
+            <point key="canvasLocation" x="87.681159420289859" y="-164.73214285714286"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="movieImage" width="612" height="408"/>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
