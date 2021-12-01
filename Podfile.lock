@@ -1,0 +1,26 @@
+PODS:
+  - IQKeyboardManager (6.5.9)
+  - SDWebImage (5.12.1):
+    - SDWebImage/Core (= 5.12.1)
+  - SDWebImage/Core (5.12.1)
+  - youtube-ios-player-helper (1.0.3)
+
+DEPENDENCIES:
+  - IQKeyboardManager
+  - SDWebImage (~> 5.0)
+  - youtube-ios-player-helper
+
+SPEC REPOS:
+  trunk:
+    - IQKeyboardManager
+    - SDWebImage
+    - youtube-ios-player-helper
+
+SPEC CHECKSUMS:
+  IQKeyboardManager: 241cc94ccabc9deb8f8bd7d12f00d73288d13ecc
+  SDWebImage: 4dc3e42d9ec0c1028b960a33ac6b637bb432207b
+  youtube-ios-player-helper: 0185c57db23c80d63d6ca11251d110abb8a4ca61
+
+PODFILE CHECKSUM: 539a4bce5c4b2cfa99da8f0243fba9d4ff3b7201
+
+COCOAPODS: 1.11.2
